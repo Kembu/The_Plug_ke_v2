@@ -1,0 +1,50 @@
+<%- include('partials/header'); -%>
+
+<body>
+
+
+    <main>
+        <div class="heading">
+          <h2>REVIEW PAGE</h2>
+        </div>
+        <form action="#">
+          <div class="container">
+            <div class="business">
+              <div class="Business-name">
+                <label class="business-name"> Enter the business name
+                  <i class="fas fa-building"></i> 
+                </label>
+                <input type="text" name="business_name"  class="wide-input" autocomplete="off" />              
+              </div>
+              <div class="Business-link">
+                <label class="business-link"> Paste the business link  
+                  <i class="fas fa-globe"></i> 
+                </label>
+                <input type="text" name="business_link" class="wide-input" autocomplete="off" />              
+              </div>
+            </div>
+            <div class="textarea">
+              <textarea name="name" rows="5" cols="80" placeholder="Leave a review here..."></textarea>
+            </div>
+            <div class="wrapper">
+              <div class="rating">
+                <input type="radio" name="rating" id="rate-1">
+                <label for="rate-1" class="fas fa-star"></label>
+                <input type="radio" name="rating" id="rate-2">
+                <label for="rate-2" class="fas fa-star"></label>
+                <input type="radio" name="rating" id="rate-3">
+                <label for="rate-3" class="fas fa-star"></label>
+                <input type="radio" name="rating" id="rate-4">
+                <label for="rate-4" class="fas fa-star"></label>
+                <input type="radio" name="rating" id="rate-5">
+                <label for="rate-5" class="fas fa-star"></label>
+              </div>
+            </div>
+            <div class="btn">
+              <button type="submit">Post</button>
+            </div>
+          </div>
+        </form>
+      </main>
+
+    <%- include('partials/footer') -%>

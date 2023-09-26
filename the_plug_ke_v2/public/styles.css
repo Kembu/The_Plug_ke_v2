@@ -1,0 +1,627 @@
+/* Import Font Awesome for the search icon */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+* {
+  font-family: poppins;
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  /* Remove the width property and adjust max-width to make it smaller */
+  max-width: 150px; /* Adjust this value as needed to make the logo smaller */
+  padding-right: 20px;
+  overflow: hidden;
+}
+
+.logo img {
+  /* Set the max-width to ensure the logo scales proportionally */
+  max-width: 100%;
+  height: auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.menu li:first-child {
+  margin-left: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu a:hover {
+  background-color: #3EB489;
+  color: white;
+  padding: 10px;
+}
+
+/* Style the search bar container */
+.search-bar {
+  display: flex;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+/* Style the search input */
+.search-bar input[type="text"] {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  padding: 4px;
+}
+
+/* Style the search button */
+.search-bar button {
+  background-color: #3EB489;
+  color: #ffffff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+/* MAIN */
+
+/* Styling for the hero header */
+.hero {
+  background-image: url("/images/Nairobi_skyline.jpg");
+  background-size: cover;
+  background-position: top center;
+  height: fit-content;
+  background-size: cover;
+  text-align: left;
+  padding: 200px;
+  color: #fff;
+  margin-top: 20px; /* Add margin to separate the hero from the navbar */
+}
+
+.hero p {
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.main-body {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+
+
+/* Styling for the main body weekly picks container */
+.Weekly-picks-container {
+  align-items: center;
+  text-align: center; /* Center the content horizontally */
+}
+
+.weekly-picks-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around; /* Distribute items evenly across the horizontal axis */
+}
+
+.weekly-picks-list li {
+  flex: 1; /* Allow each item to grow and occupy equal space */
+  margin: 10px;
+  /* border: 1px solid #ccc; */
+  padding: 10px;
+  text-align: center; /* Center the content horizontally */
+}
+
+.weekly-picks-list li a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.weekly-picks-list a:hover {
+  text-decoration: underline;
+  color: #0055aa;
+}
+
+/* Set a fixed height for the images to make them of similar size */
+.weekly-picks-list img {
+  max-width: 100%;
+  height: 450px; /* Adjust this value as needed */
+  display: block;
+  margin: 0 auto; /* Center the images horizontally */
+}
+
+a[href="./top-picks.html"] {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+/* Styling for review list */
+.review-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.review-list li {
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.review-list li img {
+  width: 40%;
+  height: auto;
+}
+
+.reviews a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.reviews a:hover {
+  text-decoration: underline;
+  color: #0055aa;
+}
+
+/** FOOTER **/
+
+footer {
+  background-color: #f370b8;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allow elements to wrap to the next line if needed */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-us {
+  display: flex;
+  align-items: center;
+}
+
+.social {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Add spacing between social icons */
+}
+
+.social-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.copyright {
+  text-align: center;
+  flex-grow: 1;
+  padding-right: 10px;
+}
+
+/* Style for the "Terms and conditions" link */
+.footer-nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px; /* Add spacing between "Copyright" and the link */
+}
+
+.footer-nav-link:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 30%;
+    padding-right: 20px;
+  }
+
+  /* Add this CSS to display the menu items on smaller screens */
+  .menu {
+    display: none; /* Hide the menu items by default */
+    flex-direction: column; /* Display menu items in a column */
+    align-items: center; /* Center menu items horizontally */
+    background-color: #ffffff;
+    position: fixed; /* Make the menu a fixed position to create a popup effect */
+    top: 70px;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu.active {
+    display: flex; /* Display the menu when the "active" class is applied */
+  }
+
+  .menu li {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center; /* Center menu text */
+  }
+
+  /* Style the search bar container */
+  .search-bar {
+    margin: 10px 0;
+    margin-right: 10px;
+  }
+
+  /* Add this CSS to create a button to open the menu */
+  .menu-button {
+    background-color: #3EB489;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+
+  .menu-button i {
+    font-size: 24px;
+  }
+
+  .menu-button {
+    display: inline-block;
+  }
+  
+  .hero {
+    padding: 100px 20px;
+  }
+
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .weekly-picks-list {
+    flex-direction: column;
+  }
+
+  .weekly-picks-list li {
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .weekly-picks-list img {
+    max-width: 80%;
+  }
+
+  .review-list {
+    flex-direction: column;
+  }
+
+  .review-list li {
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .review-list li img {
+    width: 80%;
+  }
+
+  .footer-nav-link {
+    float: none;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+}
+/* Hides the button in header section for bigger screens */
+@media (min-width: 769px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+/** MAIN REVIEWS SECTION **/
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  background-color: #3EB489;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+} 
+
+.wide-input {
+  width: 100%;
+}
+
+form .textarea {
+  width: 50%;
+  height: 200px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #eee;
+  border: 1px solid #333;
+  background: #222;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+
+form .textarea:hover {
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+
+form .textarea:focus {
+  cursor: text;
+  color: #333333;
+  background-color: white;
+  border-color: #333333;
+}
+
+form.btn {
+  height: 45px;
+  width: 100%;
+  margin: 15px 0;
+}
+
+form .btn button{
+  border: 1px solid #444;
+  outline: none;
+  background: #222;
+  color: #999;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+form .btn button:hover{
+  background: #1b1b1b;
+}
+
+.container .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container .wrapper .rating input{
+  display: none;
+}
+
+.rating label {
+  font-size: 40px;
+  color: #eeeeee;
+  padding: 2px;
+  float: right;
+  transition: all 0.2s ease;
+}
+
+.rating input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: #fd4;
+}
+
+input:checked ~ label {
+  color: #fd4;
+}
+
+input#rate-1:checked ~ label{
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+
+
+/* MAIN Business Reviews page*/
+
+.mainBody {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.reviewList {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.reviewListItem {
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.reviewImage {
+  width: 40%;
+  height: auto;
+}
+
+.reviewLink {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.reviewLink:hover {
+  text-decoration: underline;
+  color: #0055aa;
+}
+
+/* MAIN Styling for top picks page*/
+
+.mainBody {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.weeklyPicksContainer {
+  align-items: center;
+  text-align: center;
+}
+
+.weeklyPicksList {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.weeklyPicksItem {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.weeklyPicksLink {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  display: block;
+}
+
+.weeklyPicksLink:hover {
+  text-decoration: underline;
+  color: #0055aa;
+}
+
+.weeklyPicksImage {
+  max-width: 100%;
+  height: 450px;
+  display: block;
+  margin: 0 auto;
+}
+
+.topPicksLink {
+  color: black;
+  text-decoration: none;
+}
+
+/* Styles for login and signup forms and buttons */
+/* Apply styles only to the custom login form */
+form.custom-form {
+  color: #ffffff;
+  text-align: center;
+  background: black;
+  border-radius: 40px;
+  border-top: 10px solid #f370b8;
+  border-bottom: 10px solid #f370b8;
+  width: 400px;
+  height: 500px;
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in the width/height */
+}
+
+/* Apply styles to custom input fields */
+input.custom-input {
+  display: block;
+  margin: 20px auto;
+  background-color: #3b4148;
+  border: 0;
+  border-radius: 5px;
+  padding: 14px 10px;
+  width: 320px;
+  outline: 0;
+  color: #ffffff;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+/* Style input placeholders */
+input.custom-input::placeholder {
+  color: #ffffff;
+}
+
+/* Apply styles to custom error messages */
+div.custom-error {
+  color: #ff0000; /* Red color for errors */
+}
+
+/* Apply styles to custom button */
+button.custom-button {
+  border: 0;
+  background: #f370b8;
+  color: #dfdeee;
+  border-radius: 7px;
+  width: 340px;
+  height: 49px;
+  font-size: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Hover effect for the custom button */
+button.custom-button:hover {
+  background: #129aa1;
+}
+
+/* Apply styles to links within the form */
+form.custom-form a {
+  color: #f370b8;
+  text-decoration: none;
+}
+
+/* Hover effect for links within the form */
+form.custom-form a:hover {
+  color: #129aa1;
+}
