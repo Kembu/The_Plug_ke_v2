@@ -1,0 +1,49 @@
+/*Styling for 404 page*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+.page_404 {
+  padding: 40px 0;
+  background: #fff;
+  font-family: "Poppins";
+}
+
+.four_zero_four_bg {
+  background: url("https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif");
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 50px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  background: #39ac31;
+  display: inline-block;
+}
+
+.content_box_404 {
+  margin-top: -70px;
+}
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
