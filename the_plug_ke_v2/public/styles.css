@@ -116,6 +116,7 @@
 /* Styling for the main body weekly picks container */
 .Weekly-picks-container {
   align-items: center;
+  text-decoration: none;
   text-align: center; /* Center the content horizontally */
 }
 
@@ -236,6 +237,21 @@ footer {
 
 .footer-nav-link:hover {
   text-decoration: underline;
+}
+
+/* Ensure the initial color is black */
+.mainBody .weeklyPicksContainer  a h2{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.mainbody .weeklyPicksContainer a {
+  text-decoration: none; /* Remove the underline for the anchor tag */
+}
+
+.mainBody .weeklyPicksContainer a:hover h2 {
+  color: blue;       /* Make the text color blue on hover */
+  text-decoration: underline;  
 }
 
 
@@ -512,6 +528,8 @@ input#rate-1:checked ~ label{
 .weeklyPicksContainer {
   align-items: center;
   text-align: center;
+  text-decoration: none;
+
 }
 
 .weeklyPicksList {
@@ -533,6 +551,7 @@ input#rate-1:checked ~ label{
   color: #0077cc;
   font-weight: bold;
   display: block;
+  text-decoration: none;
 }
 
 .weeklyPicksLink:hover {
@@ -547,10 +566,7 @@ input#rate-1:checked ~ label{
   margin: 0 auto;
 }
 
-.topPicksLink {
-  color: black;
-  text-decoration: none;
-}
+
 
 /* Styles for login and signup forms and buttons */
 /* Apply styles only to the custom login form */
